@@ -1,0 +1,120 @@
+<html>
+    <head> 
+        <title> Arrays in JavaScript </title>
+    </head>
+
+    <body> 
+     <p> 
+
+        Declaring an Arrays
+      <h4 id= "declaring_arrays"> </h4>
+     </p> 
+     <br>
+     <p> 
+
+        First Item in an Array
+      <h4 id= "firstitem_arrays"> </h4>
+     </p>
+     <br>
+     <p> 
+
+        Length of Arrays
+      <h4 id= "length_arrays"> </h4>
+     </p>
+     <br>
+     <p>
+       
+        Adding Array Item
+        <h4 id= "dancing_item_array"> </h4>
+        </p>
+        <br>
+        <p>
+  
+         Removing Array Item
+         <h4 id= "remove_array_item"> </h4>
+         </p>
+         <br>
+         <p>
+   
+        Numbers Array
+        <h4 id= "numbers_array"> </h4>
+        </p>
+        <br>
+        <p>
+        
+        Arranged Numbers Array
+        <h4 id= "sorted_numbers_array"> </h4>
+        </p>
+        <br>
+        <p>
+  
+        Reversed Numbers Array
+        <h4 id= "reverse_numbers_array"> </h4>
+        <br>
+        </p>
+
+        Maximum Number
+        <h4 id= "maximum_number_"> </h4>
+        <br>
+        </p>
+        <p>
+
+        Minimum Number
+        <h4 id= "minimum_number_"> </h4>
+        <br>
+        </p>
+        </p>
+
+        <script>
+         var hobbies= ["Painting","Singing","Coding","Reading","Math"]
+         console.log(hobbies)
+         document.getElementById("declaring_arrays").innerHTML= hobbies;
+
+         var first_hobby= hobbies[0]
+         console.log(first_hobby)
+         document.getElementById("firstitem_arrays").innerHTML= first_hobby;
+
+         var array_length= hobbies.length 
+         console.log(array_length)
+         document.getElementById("length_arrays").innerHTML= array_length;
+
+         var array_value= "";
+         for (i = 0; i < hobbies.length; i++) {
+            console.log(hobbies[i]);
+            array_value= array_value + hobbies[i]+ "<br>";
+         }
+
+         hobbies.push("Dancing");
+         console.log(hobbies)
+         document.getElementById("dancing_item_array").innerHTML= hobbies;
+
+         hobbies.pop("Coding");
+         console.log(hobbies)
+         document.getElementById("remove_array_item").innerHTML= hobbies;
+
+         var numbers= ["1", "7", "9", "5", "6", "3", "8", "2", "4"]
+         console.log(numbers)
+         document.getElementById("numbers_array").innerHTML=numbers;
+
+         numbers.sort();
+         console.log(numbers)
+         document.getElementById("sorted_numbers_array").innerHTML= numbers;
+
+         numbers.reverse();
+         console.log(numbers)
+         document.getElementById("reverse_numbers_array").innerHTML= numbers;
+
+         var maximum_number= Math.max.apply(Math, numbers);
+         console.log(maximum_number);
+         document.getElementById("maximum_number_").innerHTML= maximum_number;
+
+         var minimum_number= Math.min.apply(Math, numbers);
+         console.log(minimum_number);
+         document.getElementById("minimum_number_").innerHTML= minimum_number;
+
+         
+
+     </script>
+
+    </body>
+</html>
